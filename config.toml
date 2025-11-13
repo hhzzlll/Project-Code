@@ -1,0 +1,42 @@
+# Combined app configuration for Runner (project selection) and Estimation parameters
+
+[project]
+# Either set project_name (under Data/) or project_dir (absolute or relative path)
+project_name = "20251028"
+# project_dir = "d:/ARCS2/Project Code/Data/20251028"
+
+[estimation.file_paths]
+# You can keep absolute IMU file paths or move them under the selected project.
+# imu_farm_fpath = "D:/论文_课设_报告等/实习/Pose Estimation/Data/20240215/IMU_farm.csv"
+# imu_uarm_fpath = "D:/论文_课设_报告等/实习/Pose Estimation/Data/20240215/IMU_uarm.csv"
+imu_farm_fpath = "{project_dir}/Data/{project_name}/imu_data/IMU_farm.csv"
+imu_uarm_fpath = "{project_dir}/Data/{project_name}/imu_data/IMU_uarm.csv"
+# Prefer using the pipeline outputs under the selected project directory
+image_fpath = "{project_dir}/measurement_data/measurement.csv"
+ground_fpath = "{project_dir}/ground_data/ground.csv"
+
+[estimation.camera_parameters]
+fx = 903.61627403
+fy = 904.39691267
+
+[estimation.transformation_matrix]
+T_cw = [
+  [0.8877746,  -0.01528558,  0.46002457],
+  [0.09429087,  0.98429187, -0.14926066],
+  [-0.45051691, 0.17588594,  0.87527061]
+]
+
+[estimation.initial_quaternion]
+q_ie = [
+  0.6301240420068317,
+  -0.2790842515286080,
+  -0.6517816001024764,
+  -0.3163422433731853
+]
+
+[estimation.other_parameters]
+num_particles = 3000
+hz_imu = 120
+hz_image = 59.99
+idx_sync_w = 7737
+idx_sync_kpts = 317

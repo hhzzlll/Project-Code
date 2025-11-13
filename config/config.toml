@@ -1,0 +1,33 @@
+[project]
+project_name = "20251028"
+
+[estimation.file_paths]
+# imu_farm_fpath = "{project_dir}/Data/{project_name}/imu_data/IMU_farm.csv"
+# imu_uarm_fpath = "{project_dir}/Data/{project_name}/imu_data/IMU_uarm.csv"
+imu_farm_fpath = "D:/论文_课设_报告等/实习/Pose Estimation/Data/20240215/IMU_farm.csv"
+imu_uarm_fpath = "D:/论文_课设_报告等/实习/Pose Estimation/Data/20240215/IMU_uarm.csv"
+# image_fpath = "{project_dir}/measurement_data/measurement.csv"
+# ground_fpath = "{project_dir}/ground_data/ground.csv"
+image_fpath = "D:/论文_课设_报告等/实习/Pose Estimation/Data/20240215/measurement.csv"
+ground_fpath = "D:/论文_课设_报告等/实习/Pose Estimation/Data/20240215/ground.csv"
+
+[estimation.camera_parameters]
+fx = 1207.8648323972175
+fy = 1205.1690210060772
+
+[estimation.camera_selection]
+camera_key = "int_cam01_img"
+camera_index = 1
+
+[estimation.transformation_matrix]
+T_cw = [ [ 0.2697234999295026, 0.9628650194026982, 0.011840101199796227,], [ 0.1351180119987616, -0.025670180902348294, -0.9904969281355411,], [ -0.9534109063878398, 0.26876010906211983, -0.13702425828164638,],]
+
+[estimation.initial_quaternion]
+q_ie = [ 0.6301240420068317, -0.279084251528608, -0.6517816001024764, -0.3163422433731853,]
+
+[estimation.other_parameters]
+num_particles = 3000
+hz_imu = 120
+hz_image = 60.0
+idx_sync_w = 7737
+idx_sync_kpts = 317

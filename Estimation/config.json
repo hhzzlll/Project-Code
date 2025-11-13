@@ -1,0 +1,46 @@
+{
+    "file_paths": {
+        "imu_farm_fpath": "D:\\论文_课设_报告等\\实习\\Pose Estimation\\Data\\20240215\\IMU_farm.csv",
+        "imu_uarm_fpath": "D:\\论文_课设_报告等\\实习\\Pose Estimation\\Data\\20240215\\IMU_uarm.csv",
+        "image_fpath": "D:\\论文_课设_报告等\\实习\\Pose Estimation\\Data\\20240215\\measurement.csv",
+        "ground_fpath": "D:\\论文_课设_报告等\\实习\\Pose Estimation\\Data\\20240215\\ground.csv"
+    },
+    "camera_parameters": {
+        "fx": 903.61627403,
+        "fy": 904.39691267
+    },
+    "transformation_matrix": {
+        "T_cw": [
+            [
+                0.8877746,
+                -0.01528558,
+                0.46002457
+            ],
+            [
+                0.09429087,
+                0.98429187,
+                -0.14926066
+            ],
+            [
+                -0.45051691,
+                0.17588594,
+                0.87527061
+            ]
+        ]
+    },
+    "initial_quaternion": {
+        "q_ie": [
+            0.6301240420068317,
+            -0.2790842515286080,
+            -0.6517816001024764,
+            -0.3163422433731853
+        ]
+    },
+    "other_parameters": {
+        "num_particles": 3000,
+        "hz_imu": 120,
+        "hz_image": 59.99,
+        "idx_sync_w": 7737,
+        "idx_sync_kpts": 317
+    }
+}
